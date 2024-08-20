@@ -1,6 +1,6 @@
 # PowerShell script to display a message
 function Display-Message {
-    $message = "Hello Umesh, how are you doing?"
+    $message = "Hello This message is created from Branches?"
     Write-Output $message
 }
 
