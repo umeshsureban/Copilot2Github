@@ -1,0 +1,23 @@
+name: Run Hello script from mainduplicate  # Name of the GitHub Actions workflow
+
+on:
+  push:
+    branches:
+   #   - main
+      - mainduplicate # Trigger the workflow on push events to the main and mainduplicate branches
+  pull_request:
+    branches:
+    #  - main
+      - mainduplicate # Trigger the workflow on pull request events to the main and mainduplicate branches
+
+jobs:
+  run-powershell-script:
+    runs-on: windows-latest # Specify the runner environment as the latest Windows OS
+
+    steps:
+    - name: Checkout repository # Step to checkout the repository
+      uses: actions/checkout@v2
+
+    - name: Run PowerShell script # Step to run the PowerShell script
+      run: ./MainDuplicate/powerbi/hello.ps1 # Command to execute the PowerShell script
+      shell: pwsh # Specify the shell to use (PowerShell)
