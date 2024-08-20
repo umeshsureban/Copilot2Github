@@ -3,11 +3,11 @@ name: Run PowerShell Script # Name of the GitHub Actions workflow
 on:
   push:
     branches:
-      - main
+   #   - main
       - mainduplicate # Trigger the workflow on push events to the main and mainduplicate branches
   pull_request:
     branches:
-      - main
+    #  - main
       - mainduplicate # Trigger the workflow on pull request events to the main and mainduplicate branches
 
 jobs:
