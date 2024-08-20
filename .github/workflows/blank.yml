@@ -1,4 +1,4 @@
-name: Run PowerShell Script # Name of the GitHub Actions workflow
+name: Run Hello script from mainduplicate  # Name of the GitHub Actions workflow
 
 on:
   push:
