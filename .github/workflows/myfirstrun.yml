@@ -1,4 +1,4 @@
-name: MIAN Run Hello script  # Name of the GitHub Actions workflow
+name: Main Run Hello script  # Name of the GitHub Actions workflow
 
 on: [push, pull_request] # Trigger the workflow on push and pull request events
 
